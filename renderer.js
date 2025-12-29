@@ -5,7 +5,7 @@ let width, height
 let centerX, centerY
 let stars = []
 const numStars = 200
-const speed = 2
+const speed = 4
 const focalLength = 200
 
 class Star {
@@ -71,7 +71,7 @@ function init() {
 }
 
 function animate() {
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.06)'
+   ctx.fillStyle = 'rgba(0, 0, 0, 0.01)'
   ctx.fillRect(0, 0, width, height)
 
   stars.forEach(star => {
